@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Form from "./Form";
+import DisplayData from "./DisplayData";
+
 
 function ParentComponent() {
   const [firstName, setFirstName] = useState("John");
@@ -26,7 +28,10 @@ function ParentComponent() {
     
   }
   return(
+    <>
     <Form firstName={firstName} lastName={lastName} newsletter={newsletter} gender={gender} handleGenderChange={handleGenderChange} handleNewsletterChange={handleNewsletterChange} handleFirstNmae={handleFirstNmae} handleLastName={handleLastName}/>
-  )
+    <DisplayData firstName={firstName} lastName={lastName} />   
+    </>
+     )
 }
 export default ParentComponent;

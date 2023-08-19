@@ -5,8 +5,8 @@ function Form(props) {
   
   return (
     <form>
-      <input type="text" value={props.firstName} onChange={props.handleFirstNameChange} />
-      <input type="text" value={props.lastName} onChange={props.handleLastNameChange} />
+      <input type="text" value={props.firstName} onChange={props.handleFirstNmae} />
+      <input type="text" value={props.lastName} onChange={props.handleLastName} />
       <label htmlFor="newsletter">Subscribe to our Newsletter?</label>
       <input
         type="checkbox"
